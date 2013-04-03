@@ -77,7 +77,7 @@ void dayPhase() {
 			Player& pl = players[i];
 			if (pl.dead) continue;
 			playerMakingClaim = i;
-			pl.bot->round(i, rounds-i, &globalMakeClaim);
+			pl.bot->round(i, rounds-r, &globalMakeClaim);
 		}
 	}
 	vector<int> votes(N, 0), pvotes, choices;
